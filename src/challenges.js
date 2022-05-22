@@ -31,9 +31,14 @@ function splitSentence(nome) {
 console.log(splitSentence('foguete'));
 
 // Desafio 4
-function concatName() {
+function concatName(listaDePalavras) {
   // seu código aqui
+  // O parametro é um array de strings
+  const primeiro = listaDePalavras[0];
+  const ultimo = listaDePalavras[listaDePalavras.length - 1];
+  return `${ultimo}, ${primeiro}`;
 }
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints() {
