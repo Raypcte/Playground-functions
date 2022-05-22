@@ -4,28 +4,31 @@ function compareTrue(bolo, chocolate) {
 
   // Se o bolo é true e chocolate e true retorna true.
   // Se bolo ou chocolate for falso retorna false.
-  if (bolo === true && chocolate === true){
+  if (bolo === true && chocolate === true) {
     return true;
-  } else if ( bolo === false || chocolate === false) {
+  } if (bolo === false || chocolate === false) {
     return false;
   }
-
 }
-console.log(compareTrue(true,false))
+console.log(compareTrue(true, false));
 
 // Desafio 2
 function calcArea(base, height) {
   // seu código aqui
- const area = (base * height) /2;
- return area;
-  
+  // Aqui calcula a área do triangulo.
+  const area = (base * height) / 2;
+  return area;
 }
-console.log(calcArea(51, 1))
+console.log(calcArea(51, 1));
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(nome) {
   // seu código aqui
+  // A função split vai dividir o nome pelo espaço.
+  const nomeDividido = nome.split(" ");
+  return nomeDividido;
 }
+console.log(splitSentence('foguete'));
 
 // Desafio 4
 function concatName() {
