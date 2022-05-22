@@ -25,7 +25,7 @@ console.log(calcArea(51, 1));
 function splitSentence(nome) {
   // seu código aqui
   // A função split vai dividir o nome pelo espaço.
-  const nomeDividido = nome.split(" ");
+  const nomeDividido = nome.split(' ');
   return nomeDividido;
 }
 console.log(splitSentence('foguete'));
