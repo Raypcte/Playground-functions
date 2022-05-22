@@ -41,10 +41,13 @@ function concatName(listaDePalavras) {
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+  // Wins é 3 pontos e ties é 1 ponto.
+  const totalDePontos = wins * 3 + ties;
+  return totalDePontos;
 }
-
+console.log(footballPoints(0,0))
 // Desafio 6
 function highestCount() {
   // seu código aqui
