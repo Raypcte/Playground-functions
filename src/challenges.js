@@ -1,6 +1,7 @@
 // Desafio 1
 function compareTrue(bolo, chocolate) {
   // seu código aqui
+
   // Se o bolo é true e chocolate e true retorna true.
   // Se bolo ou chocolate for falso retorna false.
   if (bolo === true && chocolate === true){
@@ -13,9 +14,13 @@ function compareTrue(bolo, chocolate) {
 console.log(compareTrue(true,false))
 
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
   // seu código aqui
+ const area = (base * height) /2;
+ return area;
+  
 }
+console.log(calcArea(51, 1))
 
 // Desafio 3
 function splitSentence() {
