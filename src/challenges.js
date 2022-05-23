@@ -92,9 +92,31 @@ function catAndMouse(Jerry, Tom, Joel) {
 }
 console.log(catAndMouse(1, 0, 2));
 
+function comparaDivisaoPorTresECinco(listaDePalavras, listaDeNumeros, index) {
+  if (
+    listaDeNumeros[index] % 3 === 0
+    && listaDeNumeros[index] % 5 === 0
+  ) {
+    listaDePalavras.push('fizzBuzz');
+  } else if (listaDeNumeros[index] % 5 === 0) {
+    listaDePalavras.push('buzz');
+  } else if (listaDeNumeros[index] % 3 === 0) {
+    listaDePalavras.push('fizz');
+  }
+}
+
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(listaDeNumeros) {
   // seu código aqui
+  let listaDePalavras = [];
+  for (let index = 0; index < listaDeNumeros.length; index += 1) {
+    if (listaDeNumeros[index] % 3 !== 0 && listaDeNumeros[index] % 5 !== 0) {
+      listaDePalavras.push('bug!');
+    } else {
+      comparaDivisaoPorTresECinco(listaDePalavras, listaDeNumeros, index);
+    }
+  }
+  return listaDePalavras;
 }
 
 // Desafio 9
