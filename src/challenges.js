@@ -6,7 +6,8 @@ function compareTrue(bolo, chocolate) {
   // Se bolo ou chocolate for falso retorna false.
   if (bolo === true && chocolate === true) {
     return true;
-  } if (bolo === false || chocolate === false) {
+  }
+  if (bolo === false || chocolate === false) {
     return false;
   }
 }
@@ -47,16 +48,49 @@ function footballPoints(wins, ties) {
   const totalDePontos = wins * 3 + ties;
   return totalDePontos;
 }
-console.log(footballPoints(0,0))
-// Desafio 6
-function highestCount() {
-  // seu código aqui
+console.log(footballPoints(5, 5));
+
+function verificaMaiorNumero(listaDeNumeros, maiorNumero) {
+  for (let index = 0; index < listaDeNumeros.length; index += 1) {
+    if (listaDeNumeros[index] > maiorNumero) {
+      maiorNumero = listaDeNumeros[index];
+    }
+  }
+  return maiorNumero;
 }
 
-// Desafio 7
-function catAndMouse() {
+// Desafio 6
+function highestCount(listaDeNumeros) {
   // seu código aqui
+  // Retornar a quantidade de vezes do maior número.
+  // Meta 1: Descobrir o maior número do Array
+  // Meta 2:  Verificar quantas vezes o maior número se repete.
+  let maiorNumero = listaDeNumeros[0];
+  let contador = 0;
+  maiorNumero = verificaMaiorNumero(listaDeNumeros, maiorNumero);
+  for (let index = 0; index < listaDeNumeros.length; index += 1) {
+    if (listaDeNumeros[index] === maiorNumero) {
+      contador += 1;
+    }
+  }
+  return contador;
 }
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+
+// Desafio 7
+function catAndMouse(Jerry, Tom, Joel) {
+  // seu código aqui
+  const caçaJoel = Math.abs(Joel) - Math.abs(Jerry);
+  const caçaTom = Math.abs(Tom) - Math.abs(Jerry);
+  if (caçaJoel < caçaTom) {
+    return 'cat2';
+  }
+  if (Math.abs(caçaTom) < caçaJoel) {
+    return 'cat1';
+  }
+  return 'os gatos trombam e o rato foge';
+}
+console.log(catAndMouse(1, 0, 2));
 
 // Desafio 8
 function fizzBuzz() {
