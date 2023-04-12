@@ -1,5 +1,8 @@
 # README 
 
+- O projeto consistia em desenvolver funções utilizando conceitos da linguagem como a tipagem dinâmica e operadores lógicos/aritméticos de atribuição no código.
+
+# Skills
 - Escrever códigos em JavaScript que usam variáveis e tipos primitivos;
 - Utilizar conceitos da linguagem como a tipagem dinâmica e operadores lógicos/aritméticos/de atribuição no seu código;
 - Criar códigos que usam estruturas condicionais, como o if/else .
